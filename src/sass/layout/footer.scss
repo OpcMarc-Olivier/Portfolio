@@ -1,0 +1,20 @@
+@use '../abstracts/variables.scss' as *;
+
+.footer {
+  width: 100%;
+  margin: 0;
+  background: $bg-color-header;
+  border: none;
+  padding: 2rem 0;
+
+  p {
+    color: #FFF;
+    text-align: center;
+    line-height: 1.5;
+  }
+
+  .credits{
+    font-size: .6rem;
+  }
+
+}
