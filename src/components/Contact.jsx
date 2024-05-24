@@ -17,7 +17,7 @@ function Contact() {
       />
       <div className="contactMe__icons">
         <NavLink
-          to=""
+          to="https://www.linkedin.com/in/marc-olivier-perrois/"
           target="_blank"
         >
           <FaLinkedinIn className="icon" />
