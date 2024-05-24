@@ -22,7 +22,7 @@ function Contact() {
         >
           <FaLinkedinIn className="icon" />
         </NavLink>
-        <NavLink to="https://github.com/OpcMarc-Olivier/Portfolio-Marc-Olivier.git" target="_blank">
+        <NavLink to="https://github.com/OpcMarc-Olivier/Portfolio.git" target="_blank">
           <FaGithub className="icon" />
         </NavLink>
       </div>

@@ -12,7 +12,7 @@ import {
 } from 'react-icons/fa';
 
 function About() {
-      const pdfPath = process.env.PUBLIC_URL + '/marc-olivier-perrois-cv-2023.pdf';
+      const pdfPath = process.env.PUBLIC_URL + '/cv-2024-marc-olivier-perrois.pdf';
   return (
     <div className='aboutMe'>
         <div className="about__content">
