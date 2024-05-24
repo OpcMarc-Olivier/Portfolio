@@ -1,0 +1,82 @@
+@use '../abstracts/variables.scss' as *;
+
+.home__main{
+   background: $bg-color-header;
+}
+
+.main__section{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $font_color;
+
+    h2 {
+        margin: 25px 0;
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    &.works, &.contact, &.about{
+        padding: 50px 0
+    }
+
+    &.works, &.contact{
+        background: $bg-color-body;
+        p{
+            text-align: justify;
+            line-height: 1.5;
+            font-size: 1rem;
+        }
+    }
+
+     &.works{
+        h2,p{
+            max-width: 1440px;
+                width: 80%;
+                color: $blue-green;
+        }
+        .worksList{
+            max-width: 1440px;
+            width: 80%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            justify-content: space-evenly;
+            grid-gap: 100px;
+            margin: 50px 0;
+        }
+     }
+
+     &.about{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+     }
+     &.contact{
+        h2{
+            color: $blue-green;
+        }
+        p{
+            text-align: center;
+        }
+     }
+}
+
+@media screen and (max-width:767px){
+    .main__section{
+        &.works{
+            .title{
+                color: $blue-green;
+            }
+            h2 {
+                color: $font_color;
+            }
+            .worksList{
+                grid-template-columns: 1fr;
+                grid-gap: 3rem;
+            }
+        }
+    }
+}
