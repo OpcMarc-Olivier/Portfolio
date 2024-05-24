@@ -1,0 +1,69 @@
+@use '../abstracts/variables.scss' as *;
+
+.button {
+  width: 150px;
+  line-height: 35px;
+  border-radius: 25px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  text-align: center;
+  display: inline-block;
+  margin: 30px auto;
+  cursor: pointer;
+  color: $font_color;
+  border: 2px solid $font_color;
+
+  &:visited {
+    color: $font_color;
+  }
+  &:hover{
+    transition: all .4s ease-in-out;
+  }
+
+}
+
+.red {
+  border: 2px solid #D64045;
+  color: #D64045;
+
+  &:hover{
+    border: 2px solid #D64045;
+    background-color: #D64045;
+    color: white;
+  }
+}
+.blue-green {
+  border: 2px solid $blue-green;
+  color: $blue-green;
+
+  &:hover{
+    border: 2px solid $blue-green;
+    background-color: $blue-green;
+    color: white;
+  }
+}
+
+.white {
+ background-color: transparent;
+
+  &:hover{
+    border: 2px solid transparent;
+    background-color: $blue-green;
+    color: $font_color;
+  }
+}
+
+.blue {
+    color: $blue-green;
+    border: 2px solid $blue-green;
+
+    &:visited{
+        color: $blue-green;
+    }
+
+    &:hover{
+      border-color: transparent;
+      background-color: $blue-green;
+      color: white;
+    }
+}

@@ -1,0 +1,61 @@
+@use '../abstracts/variables.scss' as *;
+
+.projectCard{
+    position: relative;
+    display: flex;
+
+    img,span{
+        width: 100%;
+        border-radius: 0.625rem;
+    }
+    img{
+        object-fit: cover;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    }
+    span{
+        height: 100%;
+    }
+    h2,span{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%)
+    }
+    h2 {
+        font-size: 2rem;
+        margin: auto;
+        text-align: center;
+        font-weight: 500;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        z-index: 1;
+    }
+    &:hover span{
+         background-color: $bg-color-hover;
+    }
+    &:hover h2{
+         opacity: 1;
+         color: $bg-color-body;
+    }
+}
+
+@media (max-width:768px){
+    .projectCard {
+        h2 {
+             opacity: 1;
+             top: 90%;
+             font-size: 1.5rem;
+             color: white;
+             width: 100%;
+        }
+        span {
+          background-color: $blue-green-transparent-darken;
+          height: 20%;
+          border-radius: 0 0 10px 10px;
+          top: 90%;
+        }
+        &:hover span{
+            background-color: none;
+        }
+    } 
+}

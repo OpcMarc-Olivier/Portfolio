@@ -1,0 +1,30 @@
+@use '../abstracts/variables.scss' as *;
+.tags {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  justify-content: space-around;
+
+  p {
+    min-width: 115px;
+    color: white;
+    background-color: $blue-green;
+    border-radius: 15px;
+    padding: 5px 10px;
+    font-size: 0.875rem;
+    text-align: center;
+    display: inline-block;
+    margin: 0;
+  }
+}
+@media (max-width:767px) {
+  .tags {
+    flex-wrap: wrap;
+
+    p {
+      min-width: 84px;
+      line-height: 14.26px;
+      font-size: 1rem;
+    }
+  }
+};

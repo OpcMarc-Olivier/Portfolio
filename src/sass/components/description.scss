@@ -1,0 +1,37 @@
+@use '../abstracts/variables.scss' as *;
+
+.description {
+  font-weight: 400;
+  margin: auto;
+  position: relative;
+
+  > h4,
+  > div {
+    width: 80%;
+    margin: auto;
+  }
+  > h4 {
+    border-radius: 20px;
+    font-weight: 400;
+    color: white;
+    background-color: $blue-green;
+    font-size: 1.5rem;
+    text-align: left;
+    padding: 5px 30px;
+    position: relative;
+    z-index: 2;
+  }
+  > div {
+    border-radius: 0 0 20px 20px;
+    background-color: #F6F6F6;
+    padding: 50px 30px 30px 30px;
+    text-align: justify;
+    position: relative;
+    top: -20px;
+    z-index: 1;
+    > p {
+      line-height: 1.5;
+      font-size: 1.125rem;
+    }
+  }
+}

@@ -1,0 +1,33 @@
+@use '../abstracts/variables.scss' as *;
+
+.titleDescription {
+  h3,
+  p {
+    margin: 0;
+    padding: 5px;
+    color:$blue-green;
+    text-align: center;
+  }
+  h3 {
+    font-size: 3rem;
+    font-weight: 500;
+  }
+  p {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 767px) {
+  .titleDescription {
+    margin-bottom: 5px;
+    p {
+      font-size: 1.75rem;
+    }
+  }
+}
+@media (max-width: 5757px) {
+  .titleDescription {
+    p {
+      font-size: 1.5rem;
+    }
+  }
+};
